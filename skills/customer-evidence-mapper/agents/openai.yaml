@@ -1,0 +1,4 @@
+interface:
+  display_name: "Customer Evidence Mapper"
+  short_description: "Map interviews into defensible problem evidence"
+  default_prompt: "Use $customer-evidence-mapper to analyze these customer interview transcripts into evidence-backed product insights."
