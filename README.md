@@ -1,6 +1,6 @@
 # Customer Insights Skills
 
-Reusable Codex skills for turning qualitative customer research into structured, evidence-backed product decisions.
+Skills for turning qualitative customer research into structured, evidence-backed product decisions.
 
 ## Featured skill: Customer Evidence Mapper
 
