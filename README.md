@@ -23,7 +23,17 @@ It explicitly separates:
 | [Analysis process](skills/customer-evidence-mapper/references/analysis-process.md) | Complete eight-step workflow and recommended behavioral interview questions |
 | [Multi-interview synthesis](skills/customer-evidence-mapper/references/multi-interview-synthesis.md) | Cross-interview synthesis, segmentation, contradictions, and customer language |
 | [Output and quality check](skills/customer-evidence-mapper/references/output-and-quality-check.md) | Required deliverables, prohibited shortcuts, and the row-by-row final audit |
+| [Employee interviews](skills/customer-evidence-mapper/references/employee-interviews.md) | Employee mode: how each column changes for EVP and employer-brand research, and the biases to flag |
+| [Content-ready outputs](skills/customer-evidence-mapper/references/content-outputs.md) | Clip log, speakers sheet, positioning check and insights summary for filmed or recorded interviews |
+| [Interview guide](skills/customer-evidence-mapper/references/interview-guide.md) | Behavioral question guide, leading-question rewrites and an interviewer briefing |
 | [Codex metadata](skills/customer-evidence-mapper/agents/openai.yaml) | Display name, skill description, and default invocation prompt |
+
+## Modes
+
+- **Customer** (default): product and customer discovery.
+- **Employee:** EVP, recruiting, retention and employer-brand research with a company's own people. The chain stays the same; "Current Way" becomes life before joining, and "Feature" becomes the employer capability.
+- **Content-ready** (add-on): for filmed or recorded interviews whose evidence will feed content. Adds a clip log, a speakers sheet with notes on leading questions, a positioning check, and an `insights.md` summary.
+- **Interview guide:** plans behavioral, non-leading questions and an interviewer briefing before the interviews happen.
 
 ## What it produces
 
@@ -41,6 +51,8 @@ It then identifies:
 3. Important evidence gaps
 4. The next personas and behavioral questions to research
 
+In content-ready mode it also produces `insights.md` and `clip-log.xlsx` (clip log, speakers, evidence map, counts and positioning check sheets).
+
 ## Use it
 
 Invoke the skill with an interview transcript or a set of interviews:
@@ -49,7 +61,14 @@ Invoke the skill with an interview transcript or a set of interviews:
 Use $customer-evidence-mapper to analyze these customer interviews.
 ```
 
-The skill is designed for product, research, marketing, and leadership teams conducting customer discovery or opportunity analysis. It is not intended for ordinary transcript summaries.
+Other examples:
+
+```text
+Use $customer-evidence-mapper in employee mode, content-ready, on these filmed interviews.
+Use $customer-evidence-mapper to write an interview guide for next month's interviews.
+```
+
+The skill is designed for product, research, marketing, people and leadership teams conducting customer discovery, opportunity analysis, or employer value proposition research. It is not intended for ordinary transcript summaries.
 
 ## Repository structure
 
@@ -62,7 +81,10 @@ skills/
     └── references/
         ├── analysis-process.md
         ├── column-definitions.md
+        ├── content-outputs.md
+        ├── employee-interviews.md
         ├── evidence-integrity.md
+        ├── interview-guide.md
         ├── multi-interview-synthesis.md
         └── output-and-quality-check.md
 ```

@@ -1,11 +1,24 @@
 ---
 name: customer-evidence-mapper
-description: Analyze qualitative customer interview transcripts into defensible problem chains, evidence-backed product insights, validation gaps, and recommended follow-up interviews. Use for customer discovery synthesis and opportunity mapping; do not use for ordinary transcript summaries.
+description: Analyze qualitative customer or employee interview transcripts into defensible problem chains, evidence-backed insights, validation gaps, and recommended follow-up interviews; can also plan a behavioral interview guide or produce a content-ready clip log for filmed interviews. Use for discovery synthesis, opportunity mapping, and EVP or employer-brand research; do not use for ordinary transcript summaries.
 ---
 
 # Customer Evidence Mapper
 
 Turn interviews into the smallest useful set of high-severity, well-evidenced customer problems. The job is analysis, not transcript summarization. Never make a conclusion more certain than the interview evidence permits.
+
+## Modes
+
+Pick the mode from the request. Ask only if it's genuinely unclear.
+
+| Mode | Use when | Also read |
+|---|---|---|
+| **Customer** (default) | Interviews with customers, users or buyers about a product or service | — |
+| **Employee** | Interviews with a company's own employees, contractors or members, for EVP, recruiting, retention or employer-brand evidence | [employee-interviews.md](references/employee-interviews.md) |
+| **Content-ready** (add-on to either mode) | The interviews were filmed or recorded and the evidence will feed content: short videos, quote posts, website or messaging | [content-outputs.md](references/content-outputs.md) |
+| **Interview guide** | Before interviews, or to plan the next round after an analysis | [interview-guide.md](references/interview-guide.md) |
+
+Content-ready mode adds a moment-level clip log, a speakers sheet (including notes on leading questions) and a positioning check, and packages the conclusions as `insights.md` plus `clip-log.xlsx`. The core table and the four required sections still come first.
 
 ## Required references
 
@@ -43,4 +56,4 @@ Do not add an evidence-classification column unless the user asks for it.
 - Do not manufacture quantitative claims or generic ROI language.
 - Prefer fewer strong rows over a large table of weak or repetitive findings.
 
-The analysis must let readers distinguish what customers said, what the evidence suggests, what remains hypothetical, and what the team may choose to build. Before returning it, use the full audit in [output-and-quality-check.md](references/output-and-quality-check.md). Rewrite, downgrade, flag, or remove any row that fails.
+The analysis must let readers distinguish what customers said, what the evidence suggests, what remains hypothetical, and what the team may choose to build. Before returning it, use the full audit in [output-and-quality-check.md](references/output-and-quality-check.md). Rewrite, downgrade, flag, or remove any row that fails. In content-ready mode, also run the content-mode checks in [content-outputs.md](references/content-outputs.md).
